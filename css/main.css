@@ -48,18 +48,6 @@ img {
   height: auto;
 }
 
-.block {
-  display: block;
-}
-
-section {
-  display: none;
-}
-
-header {
-  display: none;
-}
-
 .container {
   width: 100%;
   padding-left: 15px;
@@ -86,16 +74,18 @@ header {
 }
 
 .mobile__button {
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--second-title-color);
-  min-width: 200px;
-  min-height: 50px;
+  background-color: #fff;
+  color: var(--accent-color);
+  min-width: 209px;
+  min-height: 44px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 22px;
   border: transparent;
@@ -104,10 +94,6 @@ header {
 
 .mobile__button:hover, .mobile__button:focus {
   background-color: #ECEBEB;
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
@@ -123,6 +109,10 @@ header {
     justify-content: flex-start;
     padding: 0;
   }
+}
+
+.navigation.mobile__button {
+  text-align: center;
 }
 
 .nav__link {
@@ -157,15 +147,17 @@ header {
     position: absolute;
     display: block;
     width: 100%;
-    height: 4px;
     bottom: 0;
-    border-radius: 2px;
     background-color: var(--accent-color);
   }
   .nav__link.nav__link--current {
     color: var(--accent-color);
     position: relative;
   }
+}
+
+.nav__item:not(:last-child) {
+  border-bottom: 1px solid #E18298;
 }
 
 @media screen and (max-width: 767px) {
@@ -182,9 +174,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     height: 100%;
     padding: 48px 40px;
@@ -204,6 +193,7 @@ header {
   position: absolute;
   top: 10px;
   right: 15px;
+  fill: var(--accent-color);
   background-color: transparent;
   border: none;
 }
@@ -212,6 +202,6 @@ header {
 .button__close:hover,
 .button__close:focus,
 .button__close:active {
-  fill: var(--accent-color);
+  fill: var(--main-title-color);
 }
 /*# sourceMappingURL=main.css.map */
