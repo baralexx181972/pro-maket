@@ -1,4 +1,4 @@
-.hero__button {
+.mobile__button {
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
@@ -10,11 +10,11 @@
   min-width: 200px;
   min-height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: 22px;
   border: transparent;
   transition: background-color 250ms var(--timing-function);
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: #ECEBEB;
   }
 }
